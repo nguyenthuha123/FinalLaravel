@@ -1,0 +1,269 @@
+[1616] Log opened at 2023-04-24 19:02:01.760129
+[1616] [Step Debug] INFO: Connecting to configured address/port: 127.0.0.1:9001.
+[1616] [Step Debug] INFO: Connected to debugging client: 127.0.0.1:9001 (through xdebug.client_host/xdebug.client_port).
+[1616] [Step Debug] -> <init xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" fileuri="file:///C:/xampp/htdocs/ProjectWeb301_Laravel/webLaravel/artisan" language="PHP" xdebug:language_version="8.1.12" protocol_version="1.0" appid="1616" idekey="VSCODE"><engine version="3.2.1"><![CDATA[Xdebug]]></engine><author><![CDATA[Derick Rethans]]></author><url><![CDATA[https://xdebug.org]]></url><copyright><![CDATA[Copyright (c) 2002-2023 by Derick Rethans]]></copyright></init>
+
+[1616] [Step Debug] <- feature_set -i 1 -n resolved_breakpoints -v 1
+[1616] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="feature_set" transaction_id="1" feature="resolved_breakpoints" success="1"></response>
+
+[1616] [Step Debug] <- feature_set -i 2 -n notify_ok -v 1
+[1616] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="feature_set" transaction_id="2" feature="notify_ok" success="1"></response>
+
+[1616] [Step Debug] <- feature_set -i 3 -n extended_properties -v 1
+[1616] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="feature_set" transaction_id="3" feature="extended_properties" success="1"></response>
+
+[1616] [Step Debug] <- feature_set -i 4 -n breakpoint_include_return_value -v 1
+[1616] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="feature_set" transaction_id="4" feature="breakpoint_include_return_value" success="1"></response>
+
+[1616] [Step Debug] <- feature_set -i 5 -n max_children -v 100
+[1616] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="feature_set" transaction_id="5" feature="max_children" success="1"></response>
+
+[1616] [Step Debug] <- breakpoint_set -i 6 -t line -f file:///c:/xampp/htdocs/ProjectWeb301_Laravel/webLaravel/routes/web.php -n 48
+[1616] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="breakpoint_set" transaction_id="6" id="16160001" resolved="unresolved"></response>
+
+[1616] [Step Debug] <- breakpoint_set -i 7 -t line -f file:///c:/xampp/htdocs/ProjectWeb301_Laravel/webLaravel/routes/web.php -n 49
+[1616] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="breakpoint_set" transaction_id="7" id="16160002" resolved="unresolved"></response>
+
+[1616] [Step Debug] <- run -i 8
+[1616] [Step Debug] -> <notify xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" name="breakpoint_resolved"><breakpoint type="line" resolved="resolved" filename="file:///C:/xampp/htdocs/ProjectWeb301_Laravel/webLaravel/routes/web.php" lineno="48" state="enabled" hit_count="0" hit_value="0" id="16160001"></breakpoint></notify>
+
+[1616] [Step Debug] -> <notify xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" name="breakpoint_resolved"><breakpoint type="line" resolved="resolved" filename="file:///C:/xampp/htdocs/ProjectWeb301_Laravel/webLaravel/routes/web.php" lineno="49" state="enabled" hit_count="0" hit_value="0" id="16160002"></breakpoint></notify>
+
+[1616] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="run" transaction_id="8" status="break" reason="ok"><xdebug:message filename="file:///C:/xampp/htdocs/ProjectWeb301_Laravel/webLaravel/routes/web.php" lineno="48"></xdebug:message></response>
+
+[1616] [Step Debug] <- stack_get -i 9
+[1616] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="stack_get" transaction_id="9"><stack where="require" level="0" type="file" filename="file:///C:/xampp/htdocs/ProjectWeb301_Laravel/webLaravel/routes/web.php" lineno="48"></stack><stack where="Illuminate\Routing\RouteFileRegistrar-&gt;register" level="1" type="file" filename="file:///C:/xampp/htdocs/ProjectWeb301_Laravel/webLaravel/vendor/laravel/framework/src/Illuminate/Routing/RouteFileRegistrar.php" lineno="35"></stack><stack where="Illuminate\Routing\Router-&gt;loadRoutes" level="2" type="file" filename="file:///C:/xampp/htdocs/ProjectWeb301_Laravel/webLaravel/vendor/laravel/framework/src/Illuminate/Routing/Router.php" lineno="503"></stack><stack where="Illuminate\Routing\Router-&gt;group" level="3" type="file" filename="file:///C:/xampp/htdocs/ProjectWeb301_Laravel/webLaravel/vendor/laravel/framework/src/Illuminate/Routing/Router.php" lineno="457"></stack><stack where="Illuminate\Routing\RouteRegistrar-&gt;group" level="4" type="file" filename="file:///C:/xampp/htdocs/ProjectWeb301_Laravel/webLaravel/vendor/laravel/framework/src/Illuminate/Routing/RouteRegistrar.php" lineno="192"></stack><stack where="App\Providers\RouteServiceProvider-&gt;App\Providers\{closure:C:\xampp\htdocs\ProjectWeb301_Laravel\webLaravel\app\Providers\RouteServiceProvider.php:31-38}" level="5" type="file" filename="file:///C:/xampp/htdocs/ProjectWeb301_Laravel/webLaravel/app/Providers/RouteServiceProvider.php" lineno="37"></stack><stack where="Illuminate\Container\BoundMethod::Illuminate\Container\{closure:C:\xampp\htdocs\ProjectWeb301_Laravel\webLaravel\vendor\laravel\framework\src\Illuminate\Container\BoundMethod.php:35-37}" level="6" type="file" filename="file:///C:/xampp/htdocs/ProjectWeb301_Laravel/webLaravel/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php" lineno="36"></stack><stack where="Illuminate\Container\Util::unwrapIfClosure" level="7" type="file" filename="file:///C:/xampp/htdocs/ProjectWeb301_Laravel/webLaravel/vendor/laravel/framework/src/Illuminate/Container/Util.php" lineno="41"></stack><stack where="Illuminate\Container\BoundMethod::callBoundMethod" level="8" type="file" filename="file:///C:/xampp/htdocs/ProjectWeb301_Laravel/webLaravel/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php" lineno="81"></stack><stack where="Illuminate\Container\BoundMethod::call" level="9" type="file" filename="file:///C:/xampp/htdocs/ProjectWeb301_Laravel/webLaravel/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php" lineno="37"></stack><stack where="Illuminate\Container\Container-&gt;call" level="10" type="file" filename="file:///C:/xampp/htdocs/ProjectWeb301_Laravel/webLaravel/vendor/laravel/framework/src/Illuminate/Container/Container.php" lineno="662"></stack><stack where="Illuminate\Foundation\Support\Providers\RouteServiceProvider-&gt;loadRoutes" level="11" type="file" filename="file:///C:/xampp/htdocs/ProjectWeb301_Laravel/webLaravel/vendor/laravel/framework/src/Illuminate/Foundation/Support/Providers/RouteServiceProvider.php" lineno="120"></stack><stack where="Illuminate\Foundation\Support\Providers\RouteServiceProvider-&gt;Illuminate\Foundation\Support\Providers\{closure:C:\xampp\htdocs\ProjectWeb301_Laravel\webLaravel\vendor\laravel\framework\src\Illuminate\Foundation\Support\Providers\RouteServiceProvider.php:39-52}" level="12" type="file" filename="file:///C:/xampp/htdocs/ProjectWeb301_Laravel/webLaravel/vendor/laravel/framework/src/Illuminate/Foundation/Support/Providers/RouteServiceProvider.php" lineno="45"></stack><stack where="Illuminate\Container\BoundMethod::Illuminate\Container\{closure:C:\xampp\htdocs\ProjectWeb301_Laravel\webLaravel\vendor\laravel\framework\src\Illuminate\Container\BoundMethod.php:35-37}" level="13" type="file" filename="file:///C:/xampp/htdocs/ProjectWeb301_Laravel/webLaravel/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php" lineno="36"></stack><stack where="Illuminate\Container\Util::unwrapIfClosure" level="14" type="file" filename="file:///C:/xampp/htdocs/ProjectWeb301_Laravel/webLaravel/vendor/laravel/framework/src/Illuminate/Container/Util.php" lineno="41"></stack><stack where="Illuminate\Container\BoundMethod::callBoundMethod" level="15" type="file" filename="file:///C:/xampp/htdocs/ProjectWeb301_Laravel/webLaravel/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php" lineno="81"></stack><stack where="Illuminate\Container\BoundMethod::call" level="16" type="file" filename="file:///C:/xampp/htdocs/ProjectWeb301_Laravel/webLaravel/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php" lineno="37"></stack><stack where="Illuminate\Container\Container-&gt;call" level="17" type="file" filename="file:///C:/xampp/htdocs/ProjectWeb301_Laravel/webLaravel/vendor/laravel/framework/src/Illuminate/Container/Container.php" lineno="662"></stack><stack where="Illuminate\Support\ServiceProvider-&gt;callBootedCallbacks" level="18" type="file" filename="file:///C:/xampp/htdocs/ProjectWeb301_Laravel/webLaravel/vendor/laravel/framework/src/Illuminate/Support/ServiceProvider.php" lineno="119"></stack><stack where="Illuminate\Foundation\Application-&gt;bootProvider" level="19" type="file" filename="file:///C:/xampp/htdocs/ProjectWeb301_Laravel/webLaravel/vendor/laravel/framework/src/Illuminate/Foundation/Application.php" lineno="1009"></stack><stack where="Illuminate\Foundation\Application-&gt;Illuminate\Foundation\{closure:C:\xampp\htdocs\ProjectWeb301_Laravel\webLaravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php:986-988}" level="20" type="file" filename="file:///C:/xampp/htdocs/ProjectWeb301_Laravel/webLaravel/vendor/laravel/framework/src/Illuminate/Foundation/Application.php" lineno="987"></stack><stack where="array_walk" level="21" type="file" filename="file:///C:/xampp/htdocs/ProjectWeb301_Laravel/webLaravel/vendor/laravel/framework/src/Illuminate/Foundation/Application.php" lineno="988"></stack><stack where="Illuminate\Foundation\Application-&gt;boot" level="22" type="file" filename="file:///C:/xampp/htdocs/ProjectWeb301_Laravel/webLaravel/vendor/laravel/framework/src/Illuminate/Foundation/Application.php" lineno="988"></stack><stack where="Illuminate\Foundation\Bootstrap\BootProviders-&gt;bootstrap" level="23" type="file" filename="file:///C:/xampp/htdocs/ProjectWeb301_Laravel/webLaravel/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/BootProviders.php" lineno="17"></stack><stack where="Illuminate\Foundation\Application-&gt;bootstrapWith" level="24" type="file" filename="file:///C:/xampp/htdocs/ProjectWeb301_Laravel/webLaravel/vendor/laravel/framework/src/Illuminate/Foundation/Application.php" lineno="261"></stack><stack where="Illuminate\Foundation\Console\Kernel-&gt;bootstrap" level="25" type="file" filename="file:///C:/xampp/htdocs/ProjectWeb301_Laravel/webLaravel/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php" lineno="428"></stack><stack where="Illuminate\Foundation\Console\Kernel-&gt;handle" level="26" type="file" filename="file:///C:/xampp/htdocs/ProjectWeb301_Laravel/webLaravel/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php" lineno="198"></stack><stack where="{main}" level="27" type="file" filename="file:///C:/xampp/htdocs/ProjectWeb301_Laravel/webLaravel/artisan" lineno="37"></stack></response>
+
+[1616] [Step Debug] <- context_names -i 10 -d 0
+[1616] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="context_names" transaction_id="10"><context name="Locals" id="0"></context><context name="Superglobals" id="1"></context><context name="User defined constants" id="2"></context></response>
+
+[1616] [Step Debug] <- context_get -i 11 -d 0 -c 0
+[1616] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="context_get" transaction_id="11" context="0"><property name="$router" fullname="$router" type="object" classname="Illuminate\Routing\Router" children="1" numchildren="13" page="0" pagesize="100"><property name="verbs" fullname="$router::verbs" facet="static public" type="array" children="1" numchildren="7"></property><property name="macros" fullname="$router::macros" facet="static protected" type="array" children="1" numchildren="4"></property><property name="events" fullname="$router-&gt;events" facet="protected" type="object" classname="Illuminate\Events\Dispatcher" children="1" numchildren="6"></property><property name="container" fullname="$router-&gt;container" facet="protected" type="object" classname="Illuminate\Foundation\Application" children="1" numchildren="42"></property><property name="routes" fullname="$router-&gt;routes" facet="protected" type="object" classname="Illuminate\Routing\RouteCollection" children="1" numchildren="4"></property><property name="current" fullname="$router-&gt;current" facet="protected" type="null"></property><property name="currentRequest" fullname="$router-&gt;currentRequest" facet="protected" type="null"></property><property name="middleware" fullname="$router-&gt;middleware" facet="protected" type="array" children="1" numchildren="10"></property><property name="middlewareGroups" fullname="$router-&gt;middlewareGroups" facet="protected" type="array" children="1" numchildren="2"></property><property name="middlewarePriority" fullname="$router-&gt;middlewarePriority" facet="public" type="array" children="1" numchildren="12"></property><property name="binders" fullname="$router-&gt;binders" facet="protected" type="array" children="0" numchildren="0"></property><property name="patterns" fullname="$router-&gt;patterns" facet="protected" type="array" children="0" numchildren="0"></property><property name="groupStack" fullname="$router-&gt;groupStack" facet="protected" type="array" children="1" numchildren="1"></property></property><property name="$routes" fullname="$routes" type="string" size="63" encoding="base64"><![CDATA[QzpceGFtcHBcaHRkb2NzXFByb2plY3RXZWIzMDFfTGFyYXZlbFx3ZWJMYXJhdmVsXHJvdXRlcy93ZWIucGhw]]></property><property name="$this" fullname="$this" type="object" classname="Illuminate\Routing\RouteFileRegistrar" children="1" numchildren="1" page="0" pagesize="100"><property name="router" fullname="$this-&gt;router" facet="protected" type="object" classname="Illuminate\Routing\Router" children="1" numchildren="13"></property></property></response>
+
+[1616] [Step Debug] <- stop -i 12
+[1616] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="stop" transaction_id="12" status="stopped" reason="ok"></response>
+
+[1616] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="stop" transaction_id="12" status="stopping" reason="ok"></response>
+
+[1616] Log closed at 2023-04-24 19:03:27.749686
+
+[23044] Log opened at 2023-04-24 19:04:14.579852
+[23044] [Step Debug] INFO: Connecting to configured address/port: 127.0.0.1:9001.
+[23044] [Step Debug] INFO: Connected to debugging client: 127.0.0.1:9001 (through xdebug.client_host/xdebug.client_port).
+[23044] [Step Debug] -> <init xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" fileuri="file:///C:/xampp/htdocs/ProjectWeb301_Laravel/webLaravel/artisan" language="PHP" xdebug:language_version="8.1.12" protocol_version="1.0" appid="23044" idekey="VSCODE"><engine version="3.2.1"><![CDATA[Xdebug]]></engine><author><![CDATA[Derick Rethans]]></author><url><![CDATA[https://xdebug.org]]></url><copyright><![CDATA[Copyright (c) 2002-2023 by Derick Rethans]]></copyright></init>
+
+[23044] [Step Debug] <- feature_set -i 1 -n resolved_breakpoints -v 1
+[23044] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="feature_set" transaction_id="1" feature="resolved_breakpoints" success="1"></response>
+
+[23044] [Step Debug] <- feature_set -i 2 -n notify_ok -v 1
+[23044] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="feature_set" transaction_id="2" feature="notify_ok" success="1"></response>
+
+[23044] [Step Debug] <- feature_set -i 3 -n extended_properties -v 1
+[23044] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="feature_set" transaction_id="3" feature="extended_properties" success="1"></response>
+
+[23044] [Step Debug] <- feature_set -i 4 -n breakpoint_include_return_value -v 1
+[23044] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="feature_set" transaction_id="4" feature="breakpoint_include_return_value" success="1"></response>
+
+[23044] [Step Debug] <- feature_set -i 5 -n max_children -v 100
+[23044] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="feature_set" transaction_id="5" feature="max_children" success="1"></response>
+
+[23044] [Step Debug] <- breakpoint_set -i 6 -t line -f file:///c:/xampp/htdocs/ProjectWeb301_Laravel/webLaravel/app/Http/Controllers/CheckOutController.php -n 46
+[23044] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="breakpoint_set" transaction_id="6" id="230440001" resolved="unresolved"></response>
+
+[23044] [Step Debug] <- breakpoint_set -i 7 -t line -f file:///c:/xampp/htdocs/ProjectWeb301_Laravel/webLaravel/app/Http/Controllers/CheckOutController.php -n 122
+[23044] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="breakpoint_set" transaction_id="7" id="230440002" resolved="unresolved"></response>
+
+[23044] [Step Debug] <- breakpoint_set -i 8 -t line -f file:///c:/xampp/htdocs/ProjectWeb301_Laravel/webLaravel/routes/web.php -n 48
+[23044] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="breakpoint_set" transaction_id="8" id="230440003" resolved="unresolved"></response>
+
+[23044] [Step Debug] <- breakpoint_set -i 9 -t line -f file:///c:/xampp/htdocs/ProjectWeb301_Laravel/webLaravel/routes/web.php -n 49
+[23044] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="breakpoint_set" transaction_id="9" id="230440004" resolved="unresolved"></response>
+
+[23044] [Step Debug] <- run -i 10
+[23044] [Step Debug] -> <notify xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" name="breakpoint_resolved"><breakpoint type="line" resolved="resolved" filename="file:///C:/xampp/htdocs/ProjectWeb301_Laravel/webLaravel/routes/web.php" lineno="48" state="enabled" hit_count="0" hit_value="0" id="230440003"></breakpoint></notify>
+
+[23044] [Step Debug] -> <notify xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" name="breakpoint_resolved"><breakpoint type="line" resolved="resolved" filename="file:///C:/xampp/htdocs/ProjectWeb301_Laravel/webLaravel/routes/web.php" lineno="49" state="enabled" hit_count="0" hit_value="0" id="230440004"></breakpoint></notify>
+
+[23044] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="run" transaction_id="10" status="break" reason="ok"><xdebug:message filename="file:///C:/xampp/htdocs/ProjectWeb301_Laravel/webLaravel/routes/web.php" lineno="48"></xdebug:message></response>
+
+[23044] [Step Debug] <- stack_get -i 11
+[23044] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="stack_get" transaction_id="11"><stack where="require" level="0" type="file" filename="file:///C:/xampp/htdocs/ProjectWeb301_Laravel/webLaravel/routes/web.php" lineno="48"></stack><stack where="Illuminate\Routing\RouteFileRegistrar-&gt;register" level="1" type="file" filename="file:///C:/xampp/htdocs/ProjectWeb301_Laravel/webLaravel/vendor/laravel/framework/src/Illuminate/Routing/RouteFileRegistrar.php" lineno="35"></stack><stack where="Illuminate\Routing\Router-&gt;loadRoutes" level="2" type="file" filename="file:///C:/xampp/htdocs/ProjectWeb301_Laravel/webLaravel/vendor/laravel/framework/src/Illuminate/Routing/Router.php" lineno="503"></stack><stack where="Illuminate\Routing\Router-&gt;group" level="3" type="file" filename="file:///C:/xampp/htdocs/ProjectWeb301_Laravel/webLaravel/vendor/laravel/framework/src/Illuminate/Routing/Router.php" lineno="457"></stack><stack where="Illuminate\Routing\RouteRegistrar-&gt;group" level="4" type="file" filename="file:///C:/xampp/htdocs/ProjectWeb301_Laravel/webLaravel/vendor/laravel/framework/src/Illuminate/Routing/RouteRegistrar.php" lineno="192"></stack><stack where="App\Providers\RouteServiceProvider-&gt;App\Providers\{closure:C:\xampp\htdocs\ProjectWeb301_Laravel\webLaravel\app\Providers\RouteServiceProvider.php:31-38}" level="5" type="file" filename="file:///C:/xampp/htdocs/ProjectWeb301_Laravel/webLaravel/app/Providers/RouteServiceProvider.php" lineno="37"></stack><stack where="Illuminate\Container\BoundMethod::Illuminate\Container\{closure:C:\xampp\htdocs\ProjectWeb301_Laravel\webLaravel\vendor\laravel\framework\src\Illuminate\Container\BoundMethod.php:35-37}" level="6" type="file" filename="file:///C:/xampp/htdocs/ProjectWeb301_Laravel/webLaravel/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php" lineno="36"></stack><stack where="Illuminate\Container\Util::unwrapIfClosure" level="7" type="file" filename="file:///C:/xampp/htdocs/ProjectWeb301_Laravel/webLaravel/vendor/laravel/framework/src/Illuminate/Container/Util.php" lineno="41"></stack><stack where="Illuminate\Container\BoundMethod::callBoundMethod" level="8" type="file" filename="file:///C:/xampp/htdocs/ProjectWeb301_Laravel/webLaravel/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php" lineno="81"></stack><stack where="Illuminate\Container\BoundMethod::call" level="9" type="file" filename="file:///C:/xampp/htdocs/ProjectWeb301_Laravel/webLaravel/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php" lineno="37"></stack><stack where="Illuminate\Container\Container-&gt;call" level="10" type="file" filename="file:///C:/xampp/htdocs/ProjectWeb301_Laravel/webLaravel/vendor/laravel/framework/src/Illuminate/Container/Container.php" lineno="662"></stack><stack where="Illuminate\Foundation\Support\Providers\RouteServiceProvider-&gt;loadRoutes" level="11" type="file" filename="file:///C:/xampp/htdocs/ProjectWeb301_Laravel/webLaravel/vendor/laravel/framework/src/Illuminate/Foundation/Support/Providers/RouteServiceProvider.php" lineno="120"></stack><stack where="Illuminate\Foundation\Support\Providers\RouteServiceProvider-&gt;Illuminate\Foundation\Support\Providers\{closure:C:\xampp\htdocs\ProjectWeb301_Laravel\webLaravel\vendor\laravel\framework\src\Illuminate\Foundation\Support\Providers\RouteServiceProvider.php:39-52}" level="12" type="file" filename="file:///C:/xampp/htdocs/ProjectWeb301_Laravel/webLaravel/vendor/laravel/framework/src/Illuminate/Foundation/Support/Providers/RouteServiceProvider.php" lineno="45"></stack><stack where="Illuminate\Container\BoundMethod::Illuminate\Container\{closure:C:\xampp\htdocs\ProjectWeb301_Laravel\webLaravel\vendor\laravel\framework\src\Illuminate\Container\BoundMethod.php:35-37}" level="13" type="file" filename="file:///C:/xampp/htdocs/ProjectWeb301_Laravel/webLaravel/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php" lineno="36"></stack><stack where="Illuminate\Container\Util::unwrapIfClosure" level="14" type="file" filename="file:///C:/xampp/htdocs/ProjectWeb301_Laravel/webLaravel/vendor/laravel/framework/src/Illuminate/Container/Util.php" lineno="41"></stack><stack where="Illuminate\Container\BoundMethod::callBoundMethod" level="15" type="file" filename="file:///C:/xampp/htdocs/ProjectWeb301_Laravel/webLaravel/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php" lineno="81"></stack><stack where="Illuminate\Container\BoundMethod::call" level="16" type="file" filename="file:///C:/xampp/htdocs/ProjectWeb301_Laravel/webLaravel/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php" lineno="37"></stack><stack where="Illuminate\Container\Container-&gt;call" level="17" type="file" filename="file:///C:/xampp/htdocs/ProjectWeb301_Laravel/webLaravel/vendor/laravel/framework/src/Illuminate/Container/Container.php" lineno="662"></stack><stack where="Illuminate\Support\ServiceProvider-&gt;callBootedCallbacks" level="18" type="file" filename="file:///C:/xampp/htdocs/ProjectWeb301_Laravel/webLaravel/vendor/laravel/framework/src/Illuminate/Support/ServiceProvider.php" lineno="119"></stack><stack where="Illuminate\Foundation\Application-&gt;bootProvider" level="19" type="file" filename="file:///C:/xampp/htdocs/ProjectWeb301_Laravel/webLaravel/vendor/laravel/framework/src/Illuminate/Foundation/Application.php" lineno="1009"></stack><stack where="Illuminate\Foundation\Application-&gt;Illuminate\Foundation\{closure:C:\xampp\htdocs\ProjectWeb301_Laravel\webLaravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php:986-988}" level="20" type="file" filename="file:///C:/xampp/htdocs/ProjectWeb301_Laravel/webLaravel/vendor/laravel/framework/src/Illuminate/Foundation/Application.php" lineno="987"></stack><stack where="array_walk" level="21" type="file" filename="file:///C:/xampp/htdocs/ProjectWeb301_Laravel/webLaravel/vendor/laravel/framework/src/Illuminate/Foundation/Application.php" lineno="988"></stack><stack where="Illuminate\Foundation\Application-&gt;boot" level="22" type="file" filename="file:///C:/xampp/htdocs/ProjectWeb301_Laravel/webLaravel/vendor/laravel/framework/src/Illuminate/Foundation/Application.php" lineno="988"></stack><stack where="Illuminate\Foundation\Bootstrap\BootProviders-&gt;bootstrap" level="23" type="file" filename="file:///C:/xampp/htdocs/ProjectWeb301_Laravel/webLaravel/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/BootProviders.php" lineno="17"></stack><stack where="Illuminate\Foundation\Application-&gt;bootstrapWith" level="24" type="file" filename="file:///C:/xampp/htdocs/ProjectWeb301_Laravel/webLaravel/vendor/laravel/framework/src/Illuminate/Foundation/Application.php" lineno="261"></stack><stack where="Illuminate\Foundation\Console\Kernel-&gt;bootstrap" level="25" type="file" filename="file:///C:/xampp/htdocs/ProjectWeb301_Laravel/webLaravel/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php" lineno="428"></stack><stack where="Illuminate\Foundation\Console\Kernel-&gt;handle" level="26" type="file" filename="file:///C:/xampp/htdocs/ProjectWeb301_Laravel/webLaravel/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php" lineno="198"></stack><stack where="{main}" level="27" type="file" filename="file:///C:/xampp/htdocs/ProjectWeb301_Laravel/webLaravel/artisan" lineno="37"></stack></response>
+
+[23044] [Step Debug] <- context_names -i 12 -d 0
+[23044] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="context_names" transaction_id="12"><context name="Locals" id="0"></context><context name="Superglobals" id="1"></context><context name="User defined constants" id="2"></context></response>
+
+[23044] [Step Debug] <- context_get -i 13 -d 0 -c 0
+[23044] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="context_get" transaction_id="13" context="0"><property name="$router" fullname="$router" type="object" classname="Illuminate\Routing\Router" children="1" numchildren="13" page="0" pagesize="100"><property name="verbs" fullname="$router::verbs" facet="static public" type="array" children="1" numchildren="7"></property><property name="macros" fullname="$router::macros" facet="static protected" type="array" children="1" numchildren="4"></property><property name="events" fullname="$router-&gt;events" facet="protected" type="object" classname="Illuminate\Events\Dispatcher" children="1" numchildren="6"></property><property name="container" fullname="$router-&gt;container" facet="protected" type="object" classname="Illuminate\Foundation\Application" children="1" numchildren="42"></property><property name="routes" fullname="$router-&gt;routes" facet="protected" type="object" classname="Illuminate\Routing\RouteCollection" children="1" numchildren="4"></property><property name="current" fullname="$router-&gt;current" facet="protected" type="null"></property><property name="currentRequest" fullname="$router-&gt;currentRequest" facet="protected" type="null"></property><property name="middleware" fullname="$router-&gt;middleware" facet="protected" type="array" children="1" numchildren="10"></property><property name="middlewareGroups" fullname="$router-&gt;middlewareGroups" facet="protected" type="array" children="1" numchildren="2"></property><property name="middlewarePriority" fullname="$router-&gt;middlewarePriority" facet="public" type="array" children="1" numchildren="12"></property><property name="binders" fullname="$router-&gt;binders" facet="protected" type="array" children="0" numchildren="0"></property><property name="patterns" fullname="$router-&gt;patterns" facet="protected" type="array" children="0" numchildren="0"></property><property name="groupStack" fullname="$router-&gt;groupStack" facet="protected" type="array" children="1" numchildren="1"></property></property><property name="$routes" fullname="$routes" type="string" size="63" encoding="base64"><![CDATA[QzpceGFtcHBcaHRkb2NzXFByb2plY3RXZWIzMDFfTGFyYXZlbFx3ZWJMYXJhdmVsXHJvdXRlcy93ZWIucGhw]]></property><property name="$this" fullname="$this" type="object" classname="Illuminate\Routing\RouteFileRegistrar" children="1" numchildren="1" page="0" pagesize="100"><property name="router" fullname="$this-&gt;router" facet="protected" type="object" classname="Illuminate\Routing\Router" children="1" numchildren="13"></property></property></response>
+
+[23044] [Step Debug] <- stop -i 14
+[23044] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="stop" transaction_id="14" status="stopped" reason="ok"></response>
+
+[23044] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="stop" transaction_id="14" status="stopping" reason="ok"></response>
+
+[23044] Log closed at 2023-04-24 19:05:29.069417
+
+[18380] Log opened at 2023-04-24 19:05:35.851769
+[18380] [Step Debug] INFO: Connecting to configured address/port: 127.0.0.1:9001.
+[18380] [Step Debug] ERR: Time-out connecting to debugging client, waited: 200 ms. Tried: 127.0.0.1:9001 (through xdebug.client_host/xdebug.client_port).
+[20880] Log opened at 2023-04-24 19:18:15.488316
+[20880] [Step Debug] INFO: Connecting to configured address/port: 127.0.0.1:9001.
+[20880] [Step Debug] ERR: Time-out connecting to debugging client, waited: 200 ms. Tried: 127.0.0.1:9001 (through xdebug.client_host/xdebug.client_port).
+[20380] Log opened at 2023-04-24 19:18:25.868100
+[20380] [Step Debug] INFO: Connecting to configured address/port: 127.0.0.1:9001.
+[20380] [Step Debug] ERR: Time-out connecting to debugging client, waited: 200 ms. Tried: 127.0.0.1:9001 (through xdebug.client_host/xdebug.client_port).
+[20380] [Step Debug] INFO: Connecting to configured address/port: 127.0.0.1:9001.
+[20380] [Step Debug] ERR: Time-out connecting to debugging client, waited: 200 ms. Tried: 127.0.0.1:9001 (through xdebug.client_host/xdebug.client_port).
+[20380] Log closed at 2023-04-24 19:18:26.631769
+
+[21316] Log opened at 2023-04-24 19:18:27.175086
+[21316] [Step Debug] INFO: Connecting to configured address/port: 127.0.0.1:9001.
+[21316] [Step Debug] ERR: Time-out connecting to debugging client, waited: 200 ms. Tried: 127.0.0.1:9001 (through xdebug.client_host/xdebug.client_port).
+[21316] [Step Debug] INFO: Connecting to configured address/port: 127.0.0.1:9001.
+[21316] [Step Debug] ERR: Time-out connecting to debugging client, waited: 200 ms. Tried: 127.0.0.1:9001 (through xdebug.client_host/xdebug.client_port).
+[21316] Log closed at 2023-04-24 19:18:27.865791
+
+[20880] Log closed at 2023-04-24 19:18:29.159849
+
+[21020] Log opened at 2023-04-24 19:20:23.182913
+[21020] [Step Debug] INFO: Connecting to configured address/port: 127.0.0.1:9001.
+[21020] [Step Debug] ERR: Time-out connecting to debugging client, waited: 200 ms. Tried: 127.0.0.1:9001 (through xdebug.client_host/xdebug.client_port).
+[21020] [Step Debug] INFO: Connecting to configured address/port: 127.0.0.1:9001.
+[21020] [Step Debug] ERR: Time-out connecting to debugging client, waited: 200 ms. Tried: 127.0.0.1:9001 (through xdebug.client_host/xdebug.client_port).
+[21020] Log closed at 2023-04-24 19:20:23.820689
+
+[17484] Log opened at 2023-04-24 19:32:55.762852
+[17484] [Step Debug] INFO: Connecting to configured address/port: 127.0.0.1:9001.
+[17484] [Step Debug] INFO: Connected to debugging client: 127.0.0.1:9001 (through xdebug.client_host/xdebug.client_port).
+[17484] [Step Debug] -> <init xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" fileuri="file:///C:/xampp/htdocs/ProjectWeb301_Laravel/webLaravel/artisan" language="PHP" xdebug:language_version="8.1.12" protocol_version="1.0" appid="17484" idekey="VSCODE"><engine version="3.2.1"><![CDATA[Xdebug]]></engine><author><![CDATA[Derick Rethans]]></author><url><![CDATA[https://xdebug.org]]></url><copyright><![CDATA[Copyright (c) 2002-2023 by Derick Rethans]]></copyright></init>
+
+[17484] [Step Debug] <- feature_set -i 1 -n resolved_breakpoints -v 1
+[17484] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="feature_set" transaction_id="1" feature="resolved_breakpoints" success="1"></response>
+
+[17484] [Step Debug] <- feature_set -i 2 -n notify_ok -v 1
+[17484] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="feature_set" transaction_id="2" feature="notify_ok" success="1"></response>
+
+[17484] [Step Debug] <- feature_set -i 3 -n extended_properties -v 1
+[17484] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="feature_set" transaction_id="3" feature="extended_properties" success="1"></response>
+
+[17484] [Step Debug] <- feature_set -i 4 -n breakpoint_include_return_value -v 1
+[17484] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="feature_set" transaction_id="4" feature="breakpoint_include_return_value" success="1"></response>
+
+[17484] [Step Debug] <- feature_set -i 5 -n max_children -v 100
+[17484] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="feature_set" transaction_id="5" feature="max_children" success="1"></response>
+
+[17484] [Step Debug] <- breakpoint_set -i 6 -t line -f file:///c:/xampp/htdocs/ProjectWeb301_Laravel/webLaravel/app/Http/Controllers/CheckOutController.php -n 46
+[17484] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="breakpoint_set" transaction_id="6" id="174840001" resolved="unresolved"></response>
+
+[17484] [Step Debug] <- breakpoint_set -i 7 -t line -f file:///c:/xampp/htdocs/ProjectWeb301_Laravel/webLaravel/app/Http/Controllers/CheckOutController.php -n 122
+[17484] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="breakpoint_set" transaction_id="7" id="174840002" resolved="unresolved"></response>
+
+[17484] [Step Debug] <- run -i 8
+[22572] Log opened at 2023-04-24 20:23:43.906725
+[22572] [Step Debug] INFO: Connecting to configured address/port: 127.0.0.1:9001.
+[22572] [Step Debug] ERR: Time-out connecting to debugging client, waited: 200 ms. Tried: 127.0.0.1:9001 (through xdebug.client_host/xdebug.client_port).
+[22572] [Step Debug] INFO: Connecting to configured address/port: 127.0.0.1:9001.
+[22572] [Step Debug] ERR: Time-out connecting to debugging client, waited: 200 ms. Tried: 127.0.0.1:9001 (through xdebug.client_host/xdebug.client_port).
+[22572] Log closed at 2023-04-24 20:23:44.560024
+
+[17592] Log opened at 2023-04-24 20:26:23.949325
+[17592] [Step Debug] INFO: Connecting to configured address/port: 127.0.0.1:9001.
+[17592] [Step Debug] ERR: Time-out connecting to debugging client, waited: 200 ms. Tried: 127.0.0.1:9001 (through xdebug.client_host/xdebug.client_port).
+[17592] [Step Debug] INFO: Connecting to configured address/port: 127.0.0.1:9001.
+[17592] [Step Debug] ERR: Time-out connecting to debugging client, waited: 200 ms. Tried: 127.0.0.1:9001 (through xdebug.client_host/xdebug.client_port).
+[17592] [Step Debug] INFO: Connecting to configured address/port: 127.0.0.1:9001.
+[17592] [Step Debug] ERR: Time-out connecting to debugging client, waited: 200 ms. Tried: 127.0.0.1:9001 (through xdebug.client_host/xdebug.client_port).
+[17592] [Step Debug] INFO: Connecting to configured address/port: 127.0.0.1:9001.
+[17592] [Step Debug] ERR: Time-out connecting to debugging client, waited: 200 ms. Tried: 127.0.0.1:9001 (through xdebug.client_host/xdebug.client_port).
+[17592] Log closed at 2023-04-24 20:26:25.086365
+
+[23984] Log opened at 2023-04-24 20:27:25.424919
+[23984] [Step Debug] INFO: Connecting to configured address/port: 127.0.0.1:9001.
+[23984] [Step Debug] ERR: Time-out connecting to debugging client, waited: 200 ms. Tried: 127.0.0.1:9001 (through xdebug.client_host/xdebug.client_port).
+[23984] [Step Debug] INFO: Connecting to configured address/port: 127.0.0.1:9001.
+[23984] [Step Debug] ERR: Time-out connecting to debugging client, waited: 200 ms. Tried: 127.0.0.1:9001 (through xdebug.client_host/xdebug.client_port).
+[23984] Log closed at 2023-04-24 20:27:26.153450
+
+[6912] Log opened at 2023-04-24 20:35:28.279031
+[6912] [Step Debug] INFO: Connecting to configured address/port: 127.0.0.1:9001.
+[6912] [Step Debug] ERR: Time-out connecting to debugging client, waited: 200 ms. Tried: 127.0.0.1:9001 (through xdebug.client_host/xdebug.client_port).
+[6912] [Step Debug] INFO: Connecting to configured address/port: 127.0.0.1:9001.
+[6912] [Step Debug] ERR: Time-out connecting to debugging client, waited: 200 ms. Tried: 127.0.0.1:9001 (through xdebug.client_host/xdebug.client_port).
+[6912] [Step Debug] INFO: Connecting to configured address/port: 127.0.0.1:9001.
+[6912] [Step Debug] ERR: Time-out connecting to debugging client, waited: 200 ms. Tried: 127.0.0.1:9001 (through xdebug.client_host/xdebug.client_port).
+[6912] [Step Debug] INFO: Connecting to configured address/port: 127.0.0.1:9001.
+[6912] [Step Debug] ERR: Time-out connecting to debugging client, waited: 200 ms. Tried: 127.0.0.1:9001 (through xdebug.client_host/xdebug.client_port).
+[6912] Log closed at 2023-04-24 20:35:29.260657
+
+[14584] Log opened at 2023-04-24 20:40:42.809144
+[14584] [Step Debug] INFO: Connecting to configured address/port: 127.0.0.1:9001.
+[14584] [Step Debug] ERR: Time-out connecting to debugging client, waited: 200 ms. Tried: 127.0.0.1:9001 (through xdebug.client_host/xdebug.client_port).
+[18080] Log opened at 2023-04-24 21:57:02.007467
+[18080] [Step Debug] INFO: Connecting to configured address/port: 127.0.0.1:9001.
+[18080] [Step Debug] ERR: Time-out connecting to debugging client, waited: 200 ms. Tried: 127.0.0.1:9001 (through xdebug.client_host/xdebug.client_port).
+[3972] Log opened at 2023-04-24 21:58:20.638472
+[3972] [Step Debug] INFO: Connecting to configured address/port: 127.0.0.1:9001.
+[3972] [Step Debug] ERR: Time-out connecting to debugging client, waited: 200 ms. Tried: 127.0.0.1:9001 (through xdebug.client_host/xdebug.client_port).
+[11176] Log opened at 2023-04-24 22:01:08.692806
+[11176] [Step Debug] INFO: Connecting to configured address/port: 127.0.0.1:9001.
+[11176] [Step Debug] ERR: Time-out connecting to debugging client, waited: 200 ms. Tried: 127.0.0.1:9001 (through xdebug.client_host/xdebug.client_port).
+[3868] Log opened at 2023-04-25 06:14:01.187488
+[3868] [Step Debug] INFO: Connecting to configured address/port: 127.0.0.1:9001.
+[3868] [Step Debug] ERR: Time-out connecting to debugging client, waited: 200 ms. Tried: 127.0.0.1:9001 (through xdebug.client_host/xdebug.client_port).
+[21960] Log opened at 2023-04-25 15:55:49.851582
+[21960] [Step Debug] INFO: Connecting to configured address/port: 127.0.0.1:9001.
+[21960] [Step Debug] ERR: Time-out connecting to debugging client, waited: 200 ms. Tried: 127.0.0.1:9001 (through xdebug.client_host/xdebug.client_port).
+[24944] Log opened at 2023-04-26 04:04:53.571338
+[24944] [Step Debug] INFO: Connecting to configured address/port: 127.0.0.1:9001.
+[24944] [Step Debug] ERR: Time-out connecting to debugging client, waited: 200 ms. Tried: 127.0.0.1:9001 (through xdebug.client_host/xdebug.client_port).
+[24944] [Step Debug] INFO: Connecting to configured address/port: 127.0.0.1:9001.
+[24944] [Step Debug] ERR: Time-out connecting to debugging client, waited: 200 ms. Tried: 127.0.0.1:9001 (through xdebug.client_host/xdebug.client_port).
+[24944] [Step Debug] INFO: Connecting to configured address/port: 127.0.0.1:9001.
+[24944] [Step Debug] ERR: Time-out connecting to debugging client, waited: 200 ms. Tried: 127.0.0.1:9001 (through xdebug.client_host/xdebug.client_port).
+[24944] [Step Debug] INFO: Connecting to configured address/port: 127.0.0.1:9001.
+[24944] [Step Debug] ERR: Time-out connecting to debugging client, waited: 200 ms. Tried: 127.0.0.1:9001 (through xdebug.client_host/xdebug.client_port).
+[24944] Log closed at 2023-04-26 04:04:56.960974
+
+[26616] Log opened at 2023-04-26 04:05:26.741287
+[26616] [Step Debug] INFO: Connecting to configured address/port: 127.0.0.1:9001.
+[26616] [Step Debug] ERR: Time-out connecting to debugging client, waited: 200 ms. Tried: 127.0.0.1:9001 (through xdebug.client_host/xdebug.client_port).
+[26616] [Step Debug] INFO: Connecting to configured address/port: 127.0.0.1:9001.
+[26616] [Step Debug] ERR: Time-out connecting to debugging client, waited: 200 ms. Tried: 127.0.0.1:9001 (through xdebug.client_host/xdebug.client_port).
+[26616] Log closed at 2023-04-26 04:05:27.470502
+
+[32228] Log opened at 2023-04-26 04:29:46.424320
+[32228] [Step Debug] INFO: Connecting to configured address/port: 127.0.0.1:9001.
+[32228] [Step Debug] ERR: Time-out connecting to debugging client, waited: 200 ms. Tried: 127.0.0.1:9001 (through xdebug.client_host/xdebug.client_port).
+[20284] Log opened at 2023-04-27 01:03:56.420902
+[20284] [Step Debug] INFO: Connecting to configured address/port: 127.0.0.1:9001.
+[20284] [Step Debug] ERR: Time-out connecting to debugging client, waited: 200 ms. Tried: 127.0.0.1:9001 (through xdebug.client_host/xdebug.client_port).
+[20284] [Step Debug] INFO: Connecting to configured address/port: 127.0.0.1:9001.
+[20284] [Step Debug] ERR: Time-out connecting to debugging client, waited: 200 ms. Tried: 127.0.0.1:9001 (through xdebug.client_host/xdebug.client_port).
+[20284] Log closed at 2023-04-27 01:03:57.307283
+
+[30232] Log opened at 2023-04-27 01:04:23.762469
+[30232] [Step Debug] INFO: Connecting to configured address/port: 127.0.0.1:9001.
+[30232] [Step Debug] ERR: Time-out connecting to debugging client, waited: 200 ms. Tried: 127.0.0.1:9001 (through xdebug.client_host/xdebug.client_port).
+[25076] Log opened at 2023-04-27 01:36:45.545203
+[25076] [Step Debug] INFO: Connecting to configured address/port: 127.0.0.1:9001.
+[25076] [Step Debug] ERR: Time-out connecting to debugging client, waited: 200 ms. Tried: 127.0.0.1:9001 (through xdebug.client_host/xdebug.client_port).
+[18524] Log opened at 2023-04-27 02:16:42.615358
+[18524] [Step Debug] INFO: Connecting to configured address/port: 127.0.0.1:9001.
+[18524] [Step Debug] ERR: Time-out connecting to debugging client, waited: 200 ms. Tried: 127.0.0.1:9001 (through xdebug.client_host/xdebug.client_port).
+[18476] Log opened at 2023-04-27 03:45:38.877626
+[18476] [Step Debug] INFO: Connecting to configured address/port: 127.0.0.1:9001.
+[18476] [Step Debug] ERR: Time-out connecting to debugging client, waited: 200 ms. Tried: 127.0.0.1:9001 (through xdebug.client_host/xdebug.client_port).
+[26104] Log opened at 2023-04-27 03:47:59.767347
+[26104] [Step Debug] INFO: Connecting to configured address/port: 127.0.0.1:9001.
+[26104] [Step Debug] ERR: Time-out connecting to debugging client, waited: 200 ms. Tried: 127.0.0.1:9001 (through xdebug.client_host/xdebug.client_port).
+[30376] Log opened at 2023-04-27 04:43:53.010808
+[30376] [Step Debug] INFO: Connecting to configured address/port: 127.0.0.1:9001.
+[30376] [Step Debug] ERR: Time-out connecting to debugging client, waited: 200 ms. Tried: 127.0.0.1:9001 (through xdebug.client_host/xdebug.client_port).
+[19464] Log opened at 2023-05-04 17:00:49.792527
+[19464] [Step Debug] INFO: Connecting to configured address/port: 127.0.0.1:9001.
+[19464] [Step Debug] ERR: Time-out connecting to debugging client, waited: 200 ms. Tried: 127.0.0.1:9001 (through xdebug.client_host/xdebug.client_port).
+[16224] Log opened at 2023-05-05 13:45:13.286771
+[16224] [Step Debug] INFO: Connecting to configured address/port: 127.0.0.1:9001.
+[16224] [Step Debug] ERR: Time-out connecting to debugging client, waited: 200 ms. Tried: 127.0.0.1:9001 (through xdebug.client_host/xdebug.client_port).
+[12072] Log opened at 2023-05-05 13:45:25.086895
+[12072] [Step Debug] INFO: Connecting to configured address/port: 127.0.0.1:9001.
+[12072] [Step Debug] ERR: Time-out connecting to debugging client, waited: 200 ms. Tried: 127.0.0.1:9001 (through xdebug.client_host/xdebug.client_port).
